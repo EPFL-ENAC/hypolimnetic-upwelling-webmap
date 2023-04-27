@@ -11,14 +11,15 @@ FLAGS = flags.FLAGS
 
 def convert_nc_to_zarr(input_nc, output_zarr):
     ds = xr.open_dataset(input_nc)
+    print("Dataset openend")
     ds.to_zarr(output_zarr, mode='w')
-    print(f"Converted {input_nc} to {output_zarr}")
+    print("Dataset sucessfully converted")
 
 
 def main(argv):
     name = FLAGS.input
     input_nc = f'../data/input/{name}.nc'
-    output_zarr = f'../data/output/{name}.zarr'
+    output_zarr = f'../data/zarr/{name}.zarr'
     convert_nc_to_zarr(input_nc, output_zarr)
 
 
