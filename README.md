@@ -66,4 +66,4 @@ what we did earlier).
 1. Import the `GeoDataFrame` into the `PostGIS` database.
 2. Install and configure `Martin` to serve vector tiles from the `PostGIS` database.
 
-Et il est dommage de devoir reconvertir Zarr vers un dataframe... Au lieu, il faut se pencher sérieusement sur [@carbon/map](https://github.com/carbonplan/maps).
+Et il est dommage de devoir reconvertir Zarr vers un dataframe... Au lieu, il faut se pencher sérieusement sur [@carbon/map](https://github.com/carbonplan/maps). Example on [jupyter](https://github.com/carbonplan/ndpyramid/blob/main/notebooks/demo.ipynb)
